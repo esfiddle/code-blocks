@@ -1,3 +1,11 @@
+const char = "█";
+// const char = "#";
+
+if (char.length != 1) {
+	console.error("Please enter a valid character! It should be exactly one letter long!");
+	process.exit(1);
+}
+
 let fs = require('fs');
 let hljs = require('highlight.js');
 let cheerio = require('cheerio');
@@ -36,8 +44,8 @@ $('pre > span').each(function() {
 })
 $('span').each(function() {
 	$(this).text($(this).text().replace(/ /g, ""));
-	$(this).text($(this).text().replace(/[^\s]/g, "█"));
-	$(this).text($(this).text().replace(/[^█\n\t]/g, " "));	
+	$(this).text($(this).text().replace(/[^\s]/g, char));
+	$(this).text($(this).text().replace(new RegExp("[^"+char+"\n\t]","g"), " "));	
 })
 
 webshot($.html(), 'output.png', {
