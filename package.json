@@ -7,6 +7,7 @@
   "dependencies": {
     "cheerio": "^1.0.0-rc.2",
     "highlight.js": "^9.12.0",
+    "js-beautify": "^1.7.5",
     "webshot": "^0.18.0"
   }
 }
