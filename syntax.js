@@ -30,7 +30,7 @@ $('head').append($("<style>").html(style));
 $('pre').contents()
 		.filter(function(){return this.nodeType === 3})
 		.each(function() {
-			let matches = $(this).text().match(/^([\n\t]*)(.+?)([\n\t]*)$/s)
+			let matches = $(this).text().match(/^([\n\t]*)(.+?)([\n\t]*)$/m)
 			let elem = "<span>" + matches[2] + "</span>";
 			if (matches[2].trim().length == 0)
 				elem = matches[2]
@@ -45,7 +45,7 @@ $('pre > span').each(function() {
 $('span').each(function() {
 	$(this).text($(this).text().replace(/ /g, ""));
 	$(this).text($(this).text().replace(/[^\s]/g, char));
-	$(this).text($(this).text().replace(new RegExp("[^"+char+"\n\t]","g"), " "));	
+	$(this).text($(this).text().replace(new RegExp("[^"+char+"\n\t]","g"), " "));
 })
 
 webshot($.html(), 'output.png', {
