@@ -1,0 +1,12 @@
+{
+  "name": "render-text",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.2",
+    "highlight.js": "^9.12.0",
+    "webshot": "^0.18.0"
+  }
+}
