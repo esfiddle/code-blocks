@@ -1,7 +1,22 @@
 # Code Blocks!
 
-After cloning this repo, run `npm install` or `yarn` to install the dependencies.
+Do `npm install js-blockify` in your project! Then use it like this:
 
-Then, use this as `node syntax.js <file to generate codeblocks>`. For now, it outputs 2 files, called output.html and output.png. There is an included file for you to try it out, `test_file.js`. Also, you can do `node syntax.js syntax.js` to generate codeblocks of the source code.
+```js
+let blockify = require('js-blockify');
 
-Currently, indentation breaks for space-indented files.
+let fs = require('fs'); // not needed for blockify, but needed for this demo
+
+
+let code = `function test() {
+	console.log('This is test code!');
+}`
+
+blockify(code).then(buffer => {
+	// `buffer` is now an image buffer. You can save this wherever
+	// you need to, or do whatever you need to do with it.
+	// For now, let's save it as out.png
+	fs.writeFileSync('out.png', buffer);
+	console.log("YAY WE'RE DONE!");
+})
+```
