@@ -1,7 +1,7 @@
 {
   "name": "js-blockify",
-  "version": "1.0.0",
-  "main": "syntax.js",
+  "version": "1.0.1",
+  "main": "index.js",
   "license": "MIT",
   "private": false,
   "author": "Pranav Nutalapati",
