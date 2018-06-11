@@ -1,16 +1,16 @@
 {
-  "name": "@esfiddle/blockify",
-  "version": "1.0.1",
+	"name": "@esfiddle/blockify",
+	"version": "1.0.2",
 	"main": "index.js",
-  "license": "MIT",
-  "private": false,
+	"license": "MIT",
+	"private": false,
 	"author": "Pranav Nutalapati <pranavnutalapati@gmail.com>",
 	"homepage": "https://esfiddle.net",
-  "dependencies": {
-    "cheerio": "^1.0.0-rc.2",
-    "highlight.js": "^9.12.0",
-    "js-beautify": "^1.7.5",
-    "webshot": "^0.18.0"
+	"dependencies": {
+		"cheerio": "^1.0.0-rc.2",
+		"highlight.js": "^9.12.0",
+		"js-beautify": "^1.7.5",
+		"webshot": "^0.18.0"
 	},
 	"keywords": [
 		"ascii",
@@ -21,6 +21,6 @@
 		"talks",
 		"snippets"
 	],
-  "description": "Convert a code snippet to an image using ASCII blocks",
-  "repository": "git@github.com:esfiddle/code-blocks.git"
+	"description": "Convert a code snippet to an image using ASCII blocks",
+	"repository": "git@github.com:esfiddle/code-blocks.git"
 }
