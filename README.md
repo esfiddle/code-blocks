@@ -1,9 +1,9 @@
 # Code Blocks!
 
-Do `npm install js-blockify` in your project! Then use it like this:
+Do `npm i @esfiddle/blockify` in your project! Then use it like this:
 
 ```js
-let blockify = require('js-blockify');
+let blockify = require('@esfiddle/blockify');
 
 let fs = require('fs'); // not needed for blockify, but needed for this demo
 
