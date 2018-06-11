@@ -22,5 +22,8 @@
 		"snippets"
 	],
 	"description": "Convert a code snippet to an image using ASCII blocks",
-	"repository": "git@github.com:esfiddle/code-blocks.git"
+	"repository": "git@github.com:esfiddle/code-blocks.git",
+	"publishConfig": {
+		"access": "public"
+	}
 }
