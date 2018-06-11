@@ -1,6 +1,6 @@
 {
 	"name": "@esfiddle/blockify",
-	"version": "1.0.3",
+	"version": "1.0.4",
 	"main": "index.js",
 	"license": "MIT",
 	"private": false,
