@@ -20,3 +20,7 @@ blockify(code).then(buffer => {
 	console.log("YAY WE'RE DONE!");
 })
 ```
+
+It will produce this!
+
+![demo](demo.png)
